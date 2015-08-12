@@ -5,7 +5,13 @@ module FizzBuzz
 	class Generator
 		# This method returns a fizzbuzz list
 		def create(size)
-			Array.new(size)
+			(1..size).collect do |num| 
+				if (num % 3 == 0)
+					"fizz"
+				else
+					num
+				end 
+			end	
 		end
 	end
 end
